@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parallax-box{
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: table;
+}
+
+.parallax-box h2{
+    color: #fff;
+}
+
+.parallax-box p{
+    color: #fff;
+    margin: 100px 50px 20px;
+}
+
+.parallax-box  :nth-child(1){
+    background-image: url(../images/nike.jpg);
+  }
+.parallax-box  :nth-child(2){
+    background-image: url(../images/pic2.gif);
+  }
+
+  .parallax-box :nth-child(3){
+      background-image: url(../images/pic3.jpg);
+   
+  }

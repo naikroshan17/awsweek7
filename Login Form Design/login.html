@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+    </head>
+
+    <body>
+        <div class="logo">
+                            <img src="../images/logo1.png" alt="image not found">
+                        </div>
+        <ul>
+                        <li class="active"><a href="../shoe_store.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+            <div class="loginbox">
+                <h1>Login</h1>
+                
+                <form class="login_form" name="form" action="../shoe_store.html" method="post"  onsubmit="return validated(); ">
+                    <p>Username</p>
+                    <input autocomplete="off" type="text" name="Username" placeholder="Enter Username">
+                   <div id="email_error">Enter a valid Email ID</div>
+
+                    <div class="font">Password</div>
+                    <input type="password" name="password" placeholder="Enter Password">
+                    <div id="pass_error">Invalid!</div>
+
+                    <button type="submit" value="Login">Login</button>
+                    <br>
+                    <a href="#">Lost your password?</a><br>
+                    <a href="../Login Form Design/register.html">Don't have an account?</a>
+                </form>
+                
+            </div>
+            <script src="js/Main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,248 @@
+body{
+    font-family: sans-serif;
+    margin:0;padding:0
+    
+  }
+  
+  nav{
+    background: #151515;
+    padding: 5px 30px;
+  }
+  
+  
+  nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+  }
+  .logo img{
+    float: left;
+    width: 150px;
+    height: 90px;
+}
+  nav ul li{
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  nav ul li.items{
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+  }
+  nav ul li.items:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #33ffff;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  nav ul li.items:hover:after{
+    opacity: 1;
+    bottom: 8px;
+  }
+   
+  
+  nav ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+  }
+  nav ul li:hover a{
+    color: cyan;
+  }
+  nav ul li i{
+    font-size: 23px;
+  }
+  nav ul li.btn{
+    display: none;
+  }
+  nav ul li.btn.hide i:before{
+    content: '\f00d';
+  }
+  @media all and (max-width: 900px){
+    nav{
+      padding: 5px 30px;
+    }
+    nav ul li.items{
+      width: 100%;
+      display: none;
+    }
+    nav ul li.items.show{
+      display: block;
+    }
+    nav ul li.btn{
+      display: block;
+    }
+    nav ul li.items:hover{
+      border-radius: 5px;
+      box-shadow: inset 0 0 5px #33ffff,
+                  inset 0 0 10px #66ffff;
+    }
+    nav ul li.items:hover:after{
+      opacity: 0;
+    }
+  }
+
+
+.bg_parralax h1
+{
+  color: white;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;  
+}
+.bg_parralax p
+{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+#home {
+
+  background: url("../images/pic2.jpg");
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:100% 0;
+  position:relative;
+  min-height:1080px;
+}
+
+#home h1
+{
+  font-size: 150px;
+}
+
+#videos {
+
+  background: url("../images/pic8.jpg");
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:100% 0;
+  position:relative;
+  min-height:1080px;
+}
+
+.videos
+{
+    color: white;
+    background: black;
+}
+
+.frame, .frame2, .frame3{
+    position: relative;
+    width: 28%;
+   padding-bottom: 22%;
+    height: 40px;
+  }
+  
+  .frame iframe{
+    position: absolute;
+    top:40%;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .frame2 iframe{
+    position: absolute;
+    top:-60.4%;
+    left: 130%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .frame3 iframe{
+    position: absolute;
+    top:-160.7%;
+    left: 247%;
+    width: 100%;
+    height: 100%;
+  }
+  .button
+  {
+      color: white;
+        padding: 18px 40px;
+        border-radius: 30px;
+        margin: 0px 100px;
+        position: absolute;
+        font-size: 30px;
+        top: 67%;
+        left: 35%;
+      text-decoration: none;
+      background-color: #fe0001;
+  }
+
+.photos
+{
+    color: white;
+    background: black;
+}
+
+#photos {
+
+  background: url("../images/nike.jpg");
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:100% 0;
+  position:relative;
+  min-height:1080px;
+}
+
+.pic1
+{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    display: block;
+}
+
+
+.pic2
+{
+    position: absolute;
+    top: 20%;
+    left: 2.5%;
+    display: block;
+}
+
+.pic3
+{
+    position: absolute;
+    top: 20%;
+    left: 67.5%;
+    display: block;
+}
+
+
+footer
+{
+    padding: 5px 5px;
+    font-size: 20px;
+    height: 22px;
+    color: white;
+    background:black;
+}
